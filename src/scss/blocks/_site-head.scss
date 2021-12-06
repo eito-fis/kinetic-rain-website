@@ -16,7 +16,7 @@
     transform: translateY(0.25rem);
 
     svg {
-      width: 100px;
+      width: 30px;
     }
   }
 
@@ -27,7 +27,7 @@
   @include media-query('md') {
     &__brand {
       svg {
-        width: 160px;
+        width: 60px;
       }
     }
   }
