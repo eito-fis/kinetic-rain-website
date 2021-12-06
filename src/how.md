@@ -1,6 +1,6 @@
 ---
 title: 'How?'
 metaDesc: 'Kinetic Rain Timeline'
-layout: 'layouts/home.html'
+layout: 'layouts/base.html'
 ---
 TIMELINE PAGE

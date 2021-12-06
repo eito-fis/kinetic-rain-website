@@ -1,6 +1,6 @@
 ---
 title: 'What?'
 metaDesc: 'Kinetic Rain Systems'
-layout: 'layouts/home.html'
+layout: 'layouts/base.html'
 ---
 SYSTEMS PAGE

@@ -1,6 +1,6 @@
 ---
 title: 'About Kinetic Rain'
-layout: 'layouts/about.html'
+layout: 'layouts/base.html'
 permalink: '/about-us/index.html'
 ---
 
