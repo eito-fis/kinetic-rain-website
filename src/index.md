@@ -6,5 +6,6 @@ headerLines:
   - 'Is it possible'
   - 'to build a Kinetic Sculpture'
   - 'entirely out of Trash?'
+sculptureVideo: 'videos/poodle.webm'
 ---
 HOME PAGE
