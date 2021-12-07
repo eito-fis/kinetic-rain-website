@@ -1,0 +1,14 @@
+<div class="[ page-header ]">
+  <div class="[ wrapper ] [ flow ]">
+    <h1 class="[ page-header__heading ] [ headline ] [ weight-normal ]" data-highlight="dark">
+      {% for line in pageHeaderLines %}
+      {{ line }}
+      {% endfor %}
+    </h1>
+    {% if pageHeaderSummary %}
+    <div class="[ page-header__summary ] [measure-long]">
+      {{ pageHeaderSummary }}
+    </div>
+    {% endif %}
+  </div>
+</div>
