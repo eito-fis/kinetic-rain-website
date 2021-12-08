@@ -2,13 +2,11 @@
 title: 'Kinetic Rain'
 metaDesc: 'PIE 2021 Kinetic Rain Project'
 layout: 'layouts/home.html'
-headerTitleLines:
-  - 'Is it possible'
-  - 'to build a Kinetic Sculpture'
-  - 'entirely out of Trash?'
+headerTitle: |
+  Can you build a Kinetic Sculpture made entirely of Trash?
 sculptureVideo: 'videos/poodle.webm'
-contentTitleLines:
-  - '... we did.'
+contentTitle: |
+  ... we did.
 navLinks:
  - image: 'images/home/what.jpg'
    link: '/what'

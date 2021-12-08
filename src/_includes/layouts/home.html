@@ -3,13 +3,13 @@
 
 {% block content %}
 
-{% set pageHeaderLines = headerTitleLines %}
+{% set pageHeaderTitle = headerTitle %}
 {% include "partials/page-header.html" %}
 
 {% set videoSource = sculptureVideo %}
 {% include "partials/full-video.html" %}
 
-{% set pageHeaderLines = contentTitleLines %}
+{% set pageHeaderTitle = contentTitle %}
 {% set pageHeaderSummary = content | safe %}
 {% include "partials/page-header.html" %}
 
