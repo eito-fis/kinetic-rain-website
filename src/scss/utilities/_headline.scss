@@ -1,7 +1,7 @@
 $headline-highlights: ('dark', 'primary', 'secondary', 'quaternary', 'quinary');
 
 .headline {
-  font-size: get-size('700');
+  font-size: get-size('800');
   max-width: 18ch;
 
   @include media-query('md') {

@@ -1,11 +1,19 @@
 {% extends "layouts/base.html" %}
-
-{% set pageHeaderLines = headerLines %}
-{% set videoSource = sculptureVideo %}
+{% set pageCriticalStyles = ['css/home.css'] %}
 
 {% block content %}
 
+{% set pageHeaderLines = headerTitleLines %}
 {% include "partials/page-header.html" %}
+
+{% set videoSource = sculptureVideo %}
 {% include "partials/full-video.html" %}
+
+{% set pageHeaderLines = contentTitleLines %}
+{% set pageHeaderSummary = content | safe %}
+{% include "partials/page-header.html" %}
+
+{% set homeNavLinks = navLinks %}
+{% include "partials/home-nav.html" %}
 
 {% endblock %}

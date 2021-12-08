@@ -1,0 +1,40 @@
+.home-nav {
+  display: flex;
+  flex-direction: column;
+
+  &__media {
+    max-width: 40rem;
+  }
+
+  @include media-query('md') {
+    &__item, &__media {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  @include media-query('lg') {
+    &__content {
+      margin: auto;
+    }
+
+    &__item {
+      $nav-item-space: get-size('700');
+      display: flex;
+      align-items: flex-end;
+
+      &:nth-child(odd) {
+        flex-direction: row-reverse;
+      }
+
+      &:nth-child(odd),
+      &:nth-child(even) {
+        margin-inline-start: -$nav-item-space;
+      }
+
+      > * {
+        margin-inline-start: $nav-item-space;
+      }
+    }
+  }
+}

@@ -33,8 +33,18 @@ body {
 }
 
 a:not([class]) {
+  $bColor: get-color('quinary');
   color: currentColor;
-  text-decoration-color: get-color('quinary');
+  text-decoration: none;
+  position: relative;
+  background: linear-gradient($bColor, $bColor) left bottom no-repeat;
+  background-size:100% 4px;
+  transition: all 0.5s;
+  box-decoration-break:clone;
+}
+
+a:not([class]):hover {
+  background-size: 40% 4px;
 }
 
 :focus {
@@ -89,4 +99,3 @@ h4 {
 @import 'blocks/button';
 @import 'blocks/page-content';
 @import 'blocks/page-header';
-@import 'blocks/full-video';
