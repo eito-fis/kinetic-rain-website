@@ -7,4 +7,9 @@
     margin: get-size('800') 0;
     padding: get-size('800') 0;
   }
+
+  @include media-query('lg') {
+    margin: get-size('major') 0;
+    padding: get-size('major') 0;
+  }
 }

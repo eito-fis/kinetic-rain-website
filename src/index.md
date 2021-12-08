@@ -3,7 +3,7 @@ title: 'Kinetic Rain'
 metaDesc: 'PIE 2021 Kinetic Rain Project'
 layout: 'layouts/home.html'
 headerTitle: |
-  Can you build a Kinetic Sculpture made entirely of Trash?
+  Is it possible to build a Kinetic Sculpture made entirely of Trash?
 sculptureVideo: 'videos/poodle.webm'
 contentTitle: |
   ... we did.
