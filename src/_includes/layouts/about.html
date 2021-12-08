@@ -1,0 +1,10 @@
+{% extends "layouts/base.html" %}
+<!-- {% set pageCriticalStyles = ['css/home.css'] %} -->
+
+{% block content %}
+
+{% set pageHeaderTitle = headerTitle %}
+{% set pageHeaderSummary = content | safe %}
+{% include "partials/page-header.html" %}
+
+{% endblock %}

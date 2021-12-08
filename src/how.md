@@ -1,6 +1,10 @@
 ---
 title: 'How?'
 metaDesc: 'Kinetic Rain Timeline'
-layout: 'layouts/base.html'
+layout: 'layouts/how.html'
+headerTitle: How?
+headerSummary: |
+  We built our sculpture over the course of 2 months and 3 sprints. Here's what
+  that looked like.
 ---
 TIMELINE PAGE
