@@ -10,7 +10,7 @@
   text-decoration: none;
   text-align: center;
 
-  @include apply-utility('font', 'sans');
+  @include apply-utility('font', 'head');
   @include apply-utility('weight', 'bold');
 
   // Make sure hover state trumps all variants with a good ol’ important
