@@ -1,0 +1,35 @@
+<div class='[ panel ] [ dot-shadow ][ bg-dark-shade color-light ]'>
+  <div class='[ wrapper ]'>
+    <article class='[ section-nav ] [ flow flow-space-900 ]'>
+      {% for item in sectionNavLinks %}
+        <figure class='[ section-nav__item ] [ flow ]'>
+          <div class='[ section-nav__media ] [ frame ]' data-frame="quinary">
+            <a href='{{ item.data.url | url}}'>
+              <img
+                src='{{ item.data.hero | url}}'
+                alt='{{ item.data.heroAlt }}'
+                class='[ radius ]'
+              />
+            </a>
+          </div>
+          <figcaption class='[ section-nav__content ] [ flow flow-space-300 ]'>
+            <h2 class='[ section-nav__title ] [ text-700 md:text-900 ]'>
+              {{ item.data.title }}
+            </h2>
+            <!-- {% if item.data.dateStart  %} -->
+            <!-- <span class="[ section-nav__date ]"> -->
+            <!--   <time datetime="{{ item.data.dateStart | w3DateFilter }}">{{ date | dateFilter }}</time> -->
+            <!--   - -->
+            <!--   <time datetime="{{ item.data.dateEnd | w3DateFilter }}">{{ date | dateFilter }}</time> -->
+            <!-- </span> -->
+            <!-- {% endif %} -->
+            <p class="[ section-nav__summary ] [ measure-medium ]">
+              {{ item.data.summary | truncate(95) }}
+            </p>
+            <a href="{{ item.data.url | url }}">Continue Reading</a>
+          </figcaption>
+        </figure>
+      {% endfor %}
+    </article>
+  </div>
+</div>

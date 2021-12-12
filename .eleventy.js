@@ -16,9 +16,14 @@ module.exports = config => {
   config.addFilter('dateFilter', dateFilter);
   config.addFilter('w3DateFilter', w3DateFilter);
 
+  config.addCollection('sprints', collection => {
+    return collection.getFilteredByGlob('./src/sprints/*.md').sort((a, b) => {
+      return Number(a.data.displayOrder) > Number(b.data.displayOrder) ? 1 : -1;
+    });
+  });
   config.addCollection('systems', collection => {
     return collection.getFilteredByGlob('./src/systems/*.md').sort((a, b) => {
-      return a.data.position > b.data.position ? 1 : -1;
+      return Number(a.data.displayOrder) > Number(b.data.displayOrder) ? 1 : -1;
     });
   });
 

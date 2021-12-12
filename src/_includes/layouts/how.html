@@ -1,10 +1,13 @@
 {% extends "layouts/base.html" %}
-<!-- {% set pageCriticalStyles = ['css/home.css'] %} -->
+{% set pageCriticalStyles = ['css/how.css'] %}
 
 {% block content %}
 
 {% set pageHeaderTitle = headerTitle %}
 {% set pageHeaderSummary = headerSummary %}
 {% include "partials/page-header.html" %}
+
+{% set sectionNavLinks = collections.sprints %}
+{% include "partials/section-nav.html" %}
 
 {% endblock %}
