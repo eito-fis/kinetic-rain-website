@@ -7,7 +7,7 @@
 
   * > li > a {
     margin-top: get-size('400');
-    margin-inline-start: calc(get-size('400') / 2);
+    margin-inline-start: calc(get-size('500') / 2);
     margin-inline-end: calc(get-size('400'));
   }
 
@@ -17,21 +17,31 @@
   }
 
   &__sub-list {
-    opacity: 0;
-    visibility: hidden;
+    display: flex;
     flex-direction: column;
     justify-content: space-between;
     position: absolute;
-    top: calc(2rem + 1px);
+    top: calc(2rem + 34px);
     z-index: 1;
-    transition: opacity 0.25s;
+
+    visibility: hidden;
+    opacity: 0;
+    background:
+      linear-gradient($bColor, $bColor) left bottom no-repeat,
+      linear-gradient($bColor, $bColor) left bottom no-repeat,
+      linear-gradient($bColor, $bColor) right bottom no-repeat;
+    background-size:
+      4px 0,
+      0 4px,
+      4px 0;
+    background-color: get-color('light');
+    transition:
+      visibility 0s 0.26s,
+      opacity 0.25s 0s,
+      background-size 0.25s 0s ease-in;
 
     a {
       white-space: nowrap;
-    }
-
-    & > a{
-      margin-bottom: get-size('900');
     }
 
     a:last-child {
@@ -40,19 +50,38 @@
   }
 
   &__section {
-    transition: background-color 0.25s, color 0.25s;
+    // transition: background-color 0.25s, color 0.25s;
+    transition: background-size 0.25s ease-in;
+    background:
+      linear-gradient($bColor, $bColor) left top no-repeat,
+      linear-gradient($bColor, $bColor) left top no-repeat,
+      linear-gradient($bColor, $bColor) right top no-repeat;
+    background-size:
+      4px 0,
+      0 4px,
+      4px 0;
   }
 
   &__list > &__section:hover {
-    color: get-color('light');
-    background-color: get-color('dark-shade');
-    background-position: 10px 10px;
+    // color: get-color('light');
+    // background-color: get-color('dark-shade');
+    background-size:
+      4px 100%,
+      100% 4px,
+      4px 100%;
   }
 
   &__list > &__section:hover > &__sub-list {
-    display: flex;
     opacity: 1;
     visibility: visible;
+    background-size:
+      4px 100%,
+      100% 4px,
+      4px 100%;
+    transition:
+      visibility 0s 0s,
+      opacity 0.25s 0s,
+      background-size 0.25s 0s ease-in;
   }
 
   a {
@@ -88,5 +117,17 @@
   &__list > li:hover > a,
   a:not([data-state], [aria-current]):hover {
     background-size: 100% 4px;
+  }
+
+  @include media-query('md') {
+    margin-inline-end: get-size('900');
+
+    &__sub-list {
+      top: calc(2rem + 1px);
+    }
+  }
+
+  @include media-query('lg') {
+    margin-inline-end: 0;
   }
 }
