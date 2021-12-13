@@ -6,7 +6,7 @@
       </h2>
       <div class='[ system-nav__grid ] [ auto-grid ]'>
         {% for item in systemNavLinks %}
-          <a class='[ system-nav__link ]' href='{{ item.data.url | url}}'>
+          <a class='[ system-nav__link ]' href='{{ item.url | url}}'>
             <figure class='[ system-nav__item ] [ frame ] [ flow ]' data-frame='quinary'>
               <img
                 src='{{ item.data.hero | url}}'

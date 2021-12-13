@@ -1,0 +1,16 @@
+{% extends "layouts/base.html" %}
+{% set pageCriticalStyles = ['css/page.css'] %}
+
+{% block content %}
+
+{% set heroTitle = title %}
+{% set heroSummary = summary %}
+{% set heroImage = hero %}
+{% set heroAlt = heroAlt %}
+{% include 'partials/hero-header.html' %}
+
+<div class="[ page-content panel ] [ flow wrapper ] [ flow-space-700 ]">
+  {{ content | safe }}
+</div>
+
+{% endblock %}

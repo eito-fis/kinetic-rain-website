@@ -2,7 +2,7 @@
 title: 'About Kinetic Rain'
 layout: 'layouts/about.html'
 permalink: '/about-us/index.html'
-headerTitle: About us.
+headerTitle: About Us.
 ---
 
 This project was made by Annabelle Platt, Anusha Karandikar, Bahar Maghbouleh, Eamon

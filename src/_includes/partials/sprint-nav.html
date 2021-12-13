@@ -4,7 +4,7 @@
       {% for item in sprintNavLinks %}
         <figure class='[ sprint-nav__item ] [ flow ]'>
           <div class='[ sprint-nav__media ] [ frame ]' data-frame="quinary">
-            <a href='{{ item.data.url | url}}'>
+            <a href='{{ item.url | url}}'>
               <img
                 src='{{ item.data.hero | url}}'
                 alt='{{ item.data.heroAlt }}'
@@ -26,7 +26,7 @@
             <p class="[ sprint-nav__summary ] [ measure-medium ]">
               {{ item.data.summary | truncate(95) }}
             </p>
-            <a href="{{ item.data.url | url }}">Continue Reading</a>
+            <a href="{{ item.url | url }}">Continue Reading</a>
           </figcaption>
         </figure>
       {% endfor %}
