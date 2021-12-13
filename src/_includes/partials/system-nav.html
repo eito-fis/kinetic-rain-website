@@ -1,0 +1,27 @@
+<div class='[ panel ]'>
+  <div class='[ wrapper ]'>
+    <article class='[ system-nav ] [ flow flow-space-900 ]'>
+      <h2 class='[ text-800 md:text-900 ]'>
+        Individual Systems.
+      </h2>
+      <div class='[ system-nav__grid ] [ auto-grid ]'>
+        {% for item in systemNavLinks %}
+          <a class='[ system-nav__link ]' href='{{ item.data.url | url}}'>
+            <figure class='[ system-nav__item ] [ frame ] [ flow ]' data-frame='quinary'>
+              <img
+                src='{{ item.data.hero | url}}'
+                alt='{{ item.data.heroAlt }}'
+                class='[ system-nav__image radius ]'
+              />
+              <figcaption class='[ system-nav__details ]'>
+                <h3 class='[ system-nav__title ] [ text-700 md:text-900 ]'>
+                  {{ item.data.title }}
+                </h3>
+              </figcaption>
+            </figure>
+          </a>
+        {% endfor %}
+      </div>
+    </article>
+  </div>
+</div>

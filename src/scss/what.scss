@@ -8,4 +8,5 @@ $outputTokenCSS: false;
 @import '../../node_modules/gorko/gorko.scss';
 
 // Pull in blocks
-@import 'blocks/sprint-nav';
+@import 'blocks/system-nav';
+@import 'blocks/full-image';

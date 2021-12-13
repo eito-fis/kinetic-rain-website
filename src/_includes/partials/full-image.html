@@ -1,0 +1,10 @@
+<article class="[ full-image ] [ dot-shadow panel ] [ bg-dark-shade color-light ]">
+  <div class="[ wrapper flow flow-space-900 ]">
+    {% if imageTitle %}
+      <h2 class='[ text-800 md:text-900 ]'>
+        {{ imageTitle }}
+      </h2>
+    {% endif %}
+    <img src="{{ imageSource | url }}" alt="{{ imageAlt }}"/>
+  </div>
+</article>
