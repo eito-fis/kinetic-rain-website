@@ -3,15 +3,56 @@
   font-weight: 900;
   margin-top: -#{get-size('400')};
   margin-inline-start: -#{get-size('400')};
+  $bColor: get-color('quinary-shade');
+
+  * > li > a {
+    margin-top: get-size('400');
+    margin-inline-start: calc(get-size('400') / 2);
+    margin-inline-end: calc(get-size('400'));
+  }
 
   &__list {
     display: flex;
     flex-wrap: wrap;
+  }
 
-    > * {
-      padding-top: get-size('400');
-      padding-inline-start: get-size('400');
+  &__sub-list {
+    opacity: 0;
+    visibility: hidden;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    top: calc(2rem + 1px);
+    z-index: 1;
+    transition: opacity 0.25s;
+
+    a {
+      white-space: nowrap;
     }
+
+    & > a{
+      margin-bottom: get-size('900');
+    }
+
+    a:last-child {
+      margin-bottom: get-size('300');
+    }
+  }
+
+  &__section {
+    transition: background-color 0.25s, color 0.25s;
+  }
+
+  &__list > &__section:hover {
+    color: get-color('light');
+    background-color: get-color('dark-shade');
+    background-position: 10px 10px;
+  }
+
+  &__list > &__section:hover > &__sub-list {
+    display: flex;
+    opacity: 1;
+    visibility: visible;
   }
 
   a {
@@ -19,28 +60,33 @@
     text-decoration: none;
     display: block;
     position: relative;
-    $bColor: get-color('quinary-shade');
     background: linear-gradient($bColor, $bColor) left bottom no-repeat;
     transition: background-size 0.5s;
+    z-index: 2;
+  }
 
-    &[data-state='active'],
-    &[aria-current='page'] {
-      background-size: 100% 4px;
-    }
+  &__link[data-state='active'],
+  &__link[aria-current='page'] {
+    background-size: 100% 4px;
+  }
 
-    &[data-state='active']:hover,
-    &[aria-current='page']:hover {
-      background-size: 40% 4px;
-    }
+  &__sub-link[data-state='active'],
+  &__sub-link[aria-current='page'] {
+    background-size: 80% 4px;
+  }
 
-    &:not([data-state], [aria-current]) {
-      background-size: 0% 4px;
-    }
+  a:not([data-state], [aria-current]) {
+    background-size: 0% 4px;
+  }
 
+  &__list > li:hover > a[data-state='active'],
+  a[data-state='active']:hover,
+  a[aria-current='page']:hover {
+    background-size: 40% 4px;
+  }
 
-    &:not([data-state], [aria-current]):hover {
-      background-size: 100% 4px;
-    }
-
+  &__list > li:hover > a,
+  a:not([data-state], [aria-current]):hover {
+    background-size: 100% 4px;
   }
 }

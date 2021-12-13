@@ -1,0 +1,11 @@
+.scrolled-down{
+  transform:translateY(-100%);
+}
+
+.scrolled-up{
+  transform:translateY(0);
+}
+
+.autohide {
+  transition: all 0.3s ease-in-out;
+}

@@ -26,12 +26,16 @@
       <link rel="stylesheet" media="print" href="{{ styleRef | url }}" onload="this.media='all'" />
       {% endfor %}
     {% endif %}
+
+    <script>
+      {% include "js/autohide.js" %}
+    </script>
   </head>
   <body>
     <div class="site-wrap">
       {% include "partials/site-head.html" %}
 
-      <main tabindex="-1" id="main-content">
+      <main tabindex="-1" id="main-content" class="[ gap-top-huge md:gap-top-major ]">
         {% block content %}{% endblock %}
       </main>
 

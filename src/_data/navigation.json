@@ -10,11 +10,51 @@
     },
     {
       "text": "What",
-      "url": "/what/"
+      "url": "/what/",
+      "submenu": [
+        {
+          "text": "Mechanical",
+          "url": "/what/mechanical/"
+        },
+        {
+          "text": "Electrical",
+          "url": "/what/electrical/"
+        },
+        {
+          "text": "Software",
+          "url": "/what/software/"
+        },
+        {
+          "text": "Material",
+          "url": "/what/material/"
+        }
+      ]
     },
     {
       "text": "How",
-      "url": "/how/"
+      "url": "/how/",
+      "submenu": [
+        {
+          "text": "Ideation",
+          "url": "/how/ideation/"
+        },
+        {
+          "text": "Sprint 1",
+          "url": "/how/sprint-1/"
+        },
+        {
+          "text": "Sprint 2",
+          "url": "/how/sprint-2/"
+        },
+        {
+          "text": "Sprint 3",
+          "url": "/how/sprint-3/"
+        },
+        {
+          "text": "Demo Day",
+          "url": "/how/demo-day/"
+        }
+      ]
     }
   ]
 }
