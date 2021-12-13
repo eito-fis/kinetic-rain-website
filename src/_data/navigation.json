@@ -9,12 +9,12 @@
       "url": "/about-us/"
     },
     {
-      "text": "How",
-      "url": "/how/"
-    },
-    {
       "text": "What",
       "url": "/what/"
+    },
+    {
+      "text": "How",
+      "url": "/how/"
     }
   ]
 }

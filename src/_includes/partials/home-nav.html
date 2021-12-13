@@ -1,6 +1,6 @@
 <div class='[ panel ] [ dot-shadow ][ bg-dark-shade color-light ]'>
   <div class='[ wrapper ]'>
-    <article class='[ home-nav ] [ flow flow-space-800 ]'>
+    <article class='[ home-nav ] [ flow flow-space-900 ]'>
       {% for item in homeNavLinks %}
         <figure class='[ home-nav__item ] [ flow ]'>
           <div class='[ home-nav__media ] [ frame ]' data-frame="quinary">
@@ -8,8 +8,8 @@
               <img src='{{ item.image | url}}' alt='' aria-hidden='true' class='[ radius ]'/>
             </a>
           </div>
-          <figcaption class='[ home-nav__content ]'>
-            <h2 class='[ home-nav__title ] [ text-700 md:text-900 ]'>
+          <figcaption class='[ home-nav__content ] [ flow-space-300 ]'>
+            <h2 class='[ home-nav__title ] [ text-700 md:text-800 ]'>
               <a href='{{ item.link | url }}'>{{ item.text }}</a>
             </h2>
           </figcaption>
