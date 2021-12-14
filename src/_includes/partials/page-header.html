@@ -1,4 +1,8 @@
-<article class="[ page-header ]">
+{% if pageHeaderCondence %}
+<article class="[ page-header-condensed ] [ panel ]">
+{% else %}
+<article class="[ page-header ] [ panel ]">
+{% endif %}
   <div class="[ wrapper ] [ flow flow-space-700 ]">
     <h1 class="[ page-header__heading ] [ headline ] [ weight-normal ]" data-highlight="dark">
       {{ pageHeaderTitle }}

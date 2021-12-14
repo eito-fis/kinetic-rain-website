@@ -5,11 +5,11 @@ $headline-highlights: ('dark', 'primary', 'secondary', 'quaternary', 'quinary');
   max-width: 18ch;
 
   @include media-query('md') {
-    font-size: get-size('major');
+    font-size: get-size('900');
   }
 
   @include media-query('lg') {
-    font-size: get-size('huge');
+    font-size: get-size('major');
   }
 
   // For each color, create an exception

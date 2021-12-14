@@ -1,11 +1,7 @@
 .page-header {
-  padding: get-size('500') 0;
+  padding: 20vh 0;
+}
 
-  @include media-query('md') {
-    padding: get-size('800') 0;
-  }
-
-  @include media-query('lg') {
-    padding: get-size('900') 0;
-  }
+.page-header-condensed {
+  padding: 12vh 0;
 }
