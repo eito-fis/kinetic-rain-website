@@ -1,7 +1,9 @@
 .full-image {
-  ::selection {
-    background: rgba(get-color('light'), 0.99);
-    color: get-color('dark-shade');
+  padding-top: 0;
+  margin-top: get-size('900');
+  
+  &__wrapper {
+    max-width: 100rem;
   }
 
   img {

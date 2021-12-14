@@ -18,7 +18,7 @@ summary: |
 
 # Circuit diagram
 
-![placeholder](/images/placeholder.jpg)
+![placeholder](/images/what/circuit.png)
 
 # Overview
 
@@ -26,4 +26,4 @@ Our electrical system is relatively simple with the majority of control coming f
 Arduino. The two motor shields are stacked on top of the base Arduino board, and each
 motor is connected to one of the 8 ports on the motor shields. The limit switches are
 all connected to the ground of the base board, and then are spread across the Arduino's
-digital input pins.
+digital input pins. Each switch also utilizes an internal Arduino pull-up resistors.
