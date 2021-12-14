@@ -10,46 +10,29 @@ summary: |
 hero: '/images/how/sprint-2.jpg'
 heroAlt: 'Sprint 2 frame'
 ---
-# Culpa amplectitur ferro
+# Goals
 
-## Veluti nec tota tangeris fecere hostes huic
+## Mechanical Goals
 
-Lorem markdownum iuvenis Dicta tenet et additur sic condita caede lymphis? Leves
-omen, fontem per [serpens sic](http://www.aurorae.io/), aquilonibus virga robora
-natorumque.
+- Prove concept at scale with found materials
+- Purchase requisite electrical components
+- Complete initial frame design
+- Identify potential failure modes
 
-> Profecisse condas, cepit. Et veri nitidumque **urbes moresque et** infelix
-> materno est respexit at levis dominum: tum.
+## Software Goals
 
-## Et iratus
+- Implement software angle tracking
+- Initial integration testing and tuning
+- Complete tests for software motor encoders
 
-Quod et vellera loqui seque, ego suis quisquis usque, sorbent manus saltem
-fuissem habet; ipsa, neque? Senectae modo saxo in exsaturanda illis tepidi.
-Subit quod, exsultat Styga intendensque ceris, et parari veras, canitiemque
-ignemque. Adacto timori? Ludit iste haec, violem!
+# Deliverable
 
-Dominari utraque negat, faciemque nec vix intravit nisi sacras horror flavescunt
-est vires, versata armata. Caligine Non, tori ab animo umbrosum ad fratres
-sidoniae pugna recepit.
-
-## Tactaeque offensaque malum
-
-Revulsos an miles novae fumant proles senserit Crotonis messoris tibi vimque
-absens; traxere nullis, transferre corpore Hippotades. Vixque vix dum, uno
-facilem haud non sola fraga forti; villosa late teneret incustoditae quae
-postmodo cadunt. Nullum totis scelerique longis, rivus mille; crimina inque,
-herbas taurum; navifragumque enim sed mortale.
-
-> Undas **appellantque** medio incommendataque
-> [pastoris](http://iuvenum.net/actum-sic): perque ater genus num sensit
-> miserum, mundi? Latini et tamen Stygiam copia albo venenis? Alte restant
-> minimum facta, rubent. Hic calamus *palam*.
-
-Manant fateor solumque **digitoque petis negavit** hostia decus umerosque ipse
-ramosque, tangere cava [praemia terras multi](http://www.sepulti.io/) deserta
-posceret **diversas**. Vulgarunt quae carinas conloquiumque fessa verba venere
-undaeque proelia ruunt qua tulit. Iterum dum, quidem Hectoris instat
-[nominis](http://velox-fabula.com/) exemplumque
-[fulmina](http://trahit.com/gemuit-nunc.php) prehensis sparserat Pelasgos in
-equique cultor. Vires solebat; hoc talibus: conpescit copia; in munus, pavore
-cum vulnera stetit!
+At the end of Sprint 2, we had the start to our final piece, but it was clear some
+components weren't going to work. Our frame was made of a mix of PVC and wood, and our 3
+shafts were made with two interconnected shafts of metal we had scavenged.
+Unfortunately, these components weren't strong enough for what we needed - the PVC bent
+under the weight of the axles, and the 3D printed connector holding the shafts together
+bent under the weight of the pulleys. Worse, the software side positional tracking for
+motors wasn't accurate at all, and we were reliant on manual stops to prevent the
+pulleys from winding too far up. We would have to tackle these obstacles in our last
+sprint.
