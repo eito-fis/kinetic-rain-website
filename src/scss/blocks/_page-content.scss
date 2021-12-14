@@ -64,4 +64,51 @@
     margin-left: auto;
     margin-right: auto;
   }
+
+  .multi-image {
+    display: flex;
+    justify-content: space-between;
+
+    img {
+      width: 100%;
+    }
+
+    * + img {
+      margin-left: get-size('300');
+    }
+  }
+
+  table {
+    border-collapse: collapse;
+    max-width: 50rem;
+
+    thead tr {
+      color: get-color('light');
+      background-color: get-color('dark-shade');
+      text-align: left;
+    }
+
+    th, td {
+      padding: 1rem 0.5rem;
+    }
+    @include media-query('md') {
+      th, td {
+        padding: 1rem 2rem;
+      }
+    }
+
+    tbody tr {
+      border-bottom: thin solid get-color('dark-shade');
+    }
+
+    tbody tr:last-of-type {
+      font-weight: bold;
+      border-bottom: medium solid get-color('dark-shade');
+    }
+
+    tbody tr:nth-of-type(even) {
+      background-color: get-color('light-shade');
+    }
+  }
+
 }

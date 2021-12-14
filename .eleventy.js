@@ -13,6 +13,7 @@ module.exports = config => {
     config.addTransform('htmlmin', htmlMinTransform);
   }
 
+
   config.addFilter('dateFilter', dateFilter);
   config.addFilter('w3DateFilter', w3DateFilter);
 

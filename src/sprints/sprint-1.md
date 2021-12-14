@@ -39,8 +39,10 @@ were happy with.
 
 ## MVP
 
-![placeholder](/images/placeholder.jpg)
-![placeholder](/images/placeholder.jpg)
+<p class="multi-image">
+  <img src="/images/placeholder.jpg" alt="placeholder"/>
+  <img src="/images/placeholder.jpg" alt="placeholder"/>
+</p>
 
 Our integration test was also successful. The visit to the recycling center yielded a
 ton of usable materials, including a golf shaft, several street signs, a baby gate and
