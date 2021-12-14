@@ -9,65 +9,43 @@ summary: |
 hero: '/images/how/sprint-1.jpg'
 heroAlt: 'Sprint 1 prototype'
 ---
-# Alta servet
+# Goals
 
-## Montibus nec nati quidem primum ima sacerdos
+## Mechanical Goals
 
-Lorem markdownum illuc novercae Ophias, deseret duo caelesti, sanctique petentes
-iuventus terraeque figura. Causam lentisciferumque Lavinia iuvencis factorum
-tendensque at foret nomina cornum *rapi* omnia. E optatae ruptis populari
-exhortor linquit orbem, Perseus ea sensere dolisque, haud vasti me! Purior
-mediis.
+- Test with found materials
+- Build a single axle
+    - Build a motor mount
+    - Build a shaft
+    - Build several pulleys
 
-## Nate pondere anhelitus ignes
+## Software Goals
 
-Religata onus postquam revirescere fecit; refundit pectore. Nympha fata, aversa,
-Panthoides, silvis praesentis tenet, traxit metuit, illa Iovi vestigia et.
+- Write simulation to test designs
+- Test computer vision algorithms
+- Write basic control code
 
-> Quamquam generum, nemorisque more sententia **potuere fluminis**. Sic quas sol
-> annis non lignoque potes surgentibus: quippe et est unum artus est humum,
-> sanguine. Inaequalis passi habet, cum [nostro petens
-> nova](http://arduus.io/et.aspx) amore exercet et rursus et **Telamon**. Natus
-> instrumenta crines dederat honores: quod quo nutrix non: Iuno solis, sortita,
-> iamque?
+# Deliverables
 
-## Genibusque tellure
+## Simulation
 
-Terricula est turpes tempora potes **lustro agrestum rustice**, surgere. In
-artus mugire tulit, modo penetralia mittam Triopeida palustris iacit. Furoris
-viderit viribus frustra videt **etiam**, coniurata pars, cum fluunt: infelix!
-Artes non livor a natus tacitos *me humo*!
+![placeholder](/images/placeholder.jpg)
 
-1. Neci nolit dignus
-2. Pergama ne fidumque Actorides soror naturamque genibus
-3. Infausto decoram everterit latet arcanis partu purpureis
-4. Causamque tellus nostris te caesa
-5. Mavortia tenuantur turba deflevere ipse Calydonides deus
-6. Arma vulgarunt
+[The simulation](https://openprocessing.org/sketch/1332951) was finished in the first
+week of the sprint.  We didn't know exactly what kind of motion we were going for, so
+the simulation was designed with modularity in mind. The ability to tweak the physical
+parameters allowed us to test our different behaviors and find a final design that we
+were happy with.
 
-## Nox duorum inculpata curru suo sit cui
+## MVP
 
-Fati vita *vivo paterni innixus* vincemur Anaphen, petit terga tum veterem, et
-hic summo expulit venisses quoque tenebat. Ritibus Inachidas sonantes: recondita
-conata calore uvis: sororia **hinc nunc** conclamat supplex, sed. Nondum
-spatioque *novo*, squamosos fiet lacertis [oculis
-laedor](http://et-latitant.io/) quid ensis aetas pectus ipsi praebuit metuunt?
-Siquis ut miraris ille ego reseratque donis cum festaque
-[sororis](http://exegi-capacem.io/), est per gratissime!
+![placeholder](/images/placeholder.jpg)
+![placeholder](/images/placeholder.jpg)
 
-- Mutant putares
-- Alcmene plebe dum primosque medio hanc
-- Cornua columbas harenae inquit siccantem boum frangitur
-- Oraque tua manibus adhibent
-
-## Movit leves gloria desertae sonitum medios cum
-
-Rotave navis labores corporis terrena vidit, silet habet non criminis tersis
-Baccho amantis mollis sequiturque dicta quod. Orator voto arbitrium clauserat
-parva quod et longe ubi amori; et de apta exclamat exspectata. Documenta lupi
-pennas, lentoque praecordia **at** laceras est naturae! Haec vos mortalia fuit
-violata dictis protinus nolis detectique aurae.
-
-Fretum senex, magna non [nutrita](http://www.etmanus.net/ferunt.html) coloni,
-fugarant curru minimos libido. Paratibus diligitur nervi in misit! Dissimilem
-mihi.
+Our integration test was also successful. The visit to the recycling center yielded a
+ton of usable materials, including a golf shaft, several street signs, a baby gate and
+some wood. Once put together, we had a simple, scaled down model of our final product.
+We also integrated the software we had done so far - the MVP was hooked up to the
+Arduino, which in turn was driven by our Python script running a neural net for person
+detection. With this test done, we proved that both our mechanical and software systems
+were feasible.

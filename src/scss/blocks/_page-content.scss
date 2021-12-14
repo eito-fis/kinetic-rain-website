@@ -2,7 +2,7 @@
   @include apply-utility('leading', 'loose');
 
   > * {
-    @include apply-utility('measure', 'long');
+    @include apply-utility('measure', 'huge');
   }
 
   blockquote {
@@ -14,16 +14,25 @@
   }
 
   h2 {
-    font-size: get-size('700');
+    font-size: get-size('600');
   }
 
   h3 {
-    font-size: get-size('600');
+    font-size: get-size('500');
   }
 
   ol,
   ul {
     padding-inline-start: get-size('800');
+  }
+
+  h1 + ol,
+  h2 + ol,
+  h3 + ol,
+  h1 + ul,
+  h2 + ul,
+  h3 + ul {
+    padding-inline-start: get-size('500');
   }
 
   li + li {
@@ -32,14 +41,27 @@
 
   // Add a greater flow space for heading elements so
   // they appear more like article sections
+  h1,
   h2,
   h3 {
     --flow-space: #{get-size('800')};
   }
 
   // Add tighter flow for elements that follow a heading
+  h1 + *,
   h2 + *,
   h3 + * {
     --flow-space: #{get-size('300')};
+  }
+
+  h1 + h2,
+  h2 + h3 {
+    --flow-space: #{get-size('500')};
+  }
+
+  img {
+    margin-top: get-size('300');
+    margin-left: auto;
+    margin-right: auto;
   }
 }

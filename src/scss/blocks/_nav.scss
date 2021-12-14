@@ -2,13 +2,13 @@
   line-height: 1;
   font-weight: 900;
   margin-top: -#{get-size('400')};
-  margin-inline-start: -#{get-size('400')};
+  margin-inline-start: -#{get-size('300')};
   $bColor: get-color('quinary-shade');
 
   * > li > a {
     margin-top: get-size('400');
-    margin-inline-start: calc(get-size('500') / 2);
-    margin-inline-end: calc(get-size('400'));
+    margin-inline-start: calc(get-size('300') / 2);
+    margin-inline-end: calc(get-size('300'));
   }
 
   &__list {
@@ -21,7 +21,7 @@
     flex-direction: column;
     justify-content: space-between;
     position: absolute;
-    top: calc(2rem + 34px);
+    top: calc(2rem + 1px);
     z-index: 1;
 
     visibility: hidden;
@@ -121,6 +121,12 @@
 
   @include media-query('md') {
     margin-inline-end: get-size('900');
+
+    * > li > a {
+      margin-top: get-size('400');
+      margin-inline-start: calc(get-size('500') / 2);
+      margin-inline-end: calc(get-size('500'));
+    }
 
     &__sub-list {
       top: calc(2rem + 1px);

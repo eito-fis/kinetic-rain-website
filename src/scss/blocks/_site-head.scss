@@ -16,6 +16,7 @@
 
   &__brand {
     flex-shrink: 0;
+    display: None;
     svg {
       width: 60px;
     }
@@ -27,6 +28,8 @@
 
   @include media-query('md') {
     &__brand {
+      display: block;
+
       svg {
         width: 60px;
       }

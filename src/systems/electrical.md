@@ -7,42 +7,23 @@ heroAlt: 'Sprint 1 prototype'
 summary: |
   The mechanical systems we worked with.
 ---
-# Tempus vix comae
 
-## Formidine fuisset aliena in sunt non
+# Components
 
-Lorem markdownum negant. Fidem pars nec; edidicisse ubi Ophiusiaque cycno,
-praecordia fata: neque ille te summoque Messenia. Aliter mea latus tenus, cornua
-suis volucrem tecum libentius. Placatus longo momordi sapiens.
+- 8x [Pololu 12v Motors](https://www.pololu.com/product/3227)
+- 8x [InduSKY Micro Limit
+  Switch](https://www.amazon.com/InduSKY-Switch-Momentary-Roller-Switches/dp/B08736NP44/ref=asc_df_B08736NP44/?tag=hyprod-20&linkCode=df0&hvadid=475843397258&hvpos=&hvnetw=g&hvrand=7643850205685222884&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9002079&hvtargid=pla-974750520630&psc=1)
+- 1x [Arduino Uno Rev3](https://store.arduino.cc/products/arduino-uno-rev3/)
+- 2x [Adafruit Motor Shield v2.3](https://www.adafruit.com/product/1438)
 
-- Forma numero ira
-- Et cedit oris Arcades iter
-- Thisbe avidae Cecropis
-- Est seque
+# Circuit diagram
 
-## Nemus auguror primasque tenemus passurae Aurora plagamque
+![placeholder](/images/placeholder.jpg)
 
-Sedes **adunca in** fecissem Iliaden dixit, non in tincto **rictus quid**. Suum
-qui ipse adludit, nostras fruges, *taurorum* ingentem ad. Ille tellus, se alieni
-iam inposuit, pulvere color petunt *natam*. Fluctus duarum carne iam heros
-verba, terraeque ipse femina servaturis longa. Ab ferre et silva terris muta
-clavam urebant, regem ego leni, erigitur?
+# Overview
 
-1. Verba gramen et pietatis clipeoque caput
-2. Campis esse medio Aeacus
-3. Abest illi ut silentum nullus
-
-## Mediis concubiturus suos Chirona tellure placabat Iuppiter
-
-Et omnia stabat vires promissaque quod pectus artes manus vidit beatior in inde
-scopulis dura hospes inplet, mihi. Tibi dilatus manat, et heros. En colorum
-spernit infelix; partim te quaque, et et fuit, axis qui; inposita.
-
-> Descendunt ite igitur exhalata utrumque reus datum omnes inscripsere exigit et
-> cutis non Minoe securibus caput. Dum parmam fluctibus tollere; victoria et est
-> contraria mihi!
-
-Et animum, in ubi reddite celebres citius pectore centum qui ne palustribus
-sacra: geminis emicat, tantum erat! Veniam placebant ponti indignabere dicentem
-quisque albis magno iacuit utrumque evehor, poma suis!
-
+Our electrical system is relatively simple with the majority of control coming from the
+Arduino. The two motor shields are stacked on top of the base Arduino board, and each
+motor is connected to one of the 8 ports on the motor shields. The limit switches are
+all connected to the ground of the base board, and then are spread across the Arduino's
+digital input pins.
