@@ -17,6 +17,10 @@
   }
 
   &__content {
+    ::selection {
+      background: rgba(get-color('light'), 0.99);
+      color: get-color('dark-shade');
+    }
     display: inline-block;
     padding: get-size('600');
   }

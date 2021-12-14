@@ -4,8 +4,7 @@ metaDesc: 'Mechanical systems'
 displayOrder: 1
 hero: '/images/what/mechanical.jpg'
 heroAlt: 'Kinetic sculpture inspiration'
-summary: |
-  The mechanical systems we worked with.
+summary: The things we built.
 ---
 # Furit crurumque sua
 

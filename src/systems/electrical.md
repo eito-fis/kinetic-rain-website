@@ -4,8 +4,7 @@ metaDesc: 'Electrical systems'
 displayOrder: 2
 hero: '/images/how/sprint-1.jpg'
 heroAlt: 'Sprint 1 prototype'
-summary: |
-  The mechanical systems we worked with.
+summary: The things we powered.
 ---
 
 # Components

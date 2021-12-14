@@ -15,7 +15,12 @@ navLinks:
    link: '/how'
    text: 'How did we get there?' 
 ---
-Prow scuttle parrel provost Sail ho shrouds spirits boom mizzenmast yardarm.
-Pinnace holystone mizzenmast quarter crow's nest nipperkin grog yardarm hempen
-halter furl. Swab barque interloper chantey doubloon starboard grog black jack
-gangway rutters.
+
+We are team TEAM NAME HERE, and for [PIE 2021](http://poe.olin.edu/) we put together a
+large-scale, responsive kinetic sculpture made of recycled materials. Our goals were
+keep sustainability in mind while working on something that was visually appealing,
+responsive to the viewer, and challenging to make.
+
+<br/>
+
+Safe to say, we accomplished what we set out to achieve.

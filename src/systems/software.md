@@ -4,8 +4,7 @@ metaDesc: 'Software systems'
 displayOrder: 3
 hero: '/images/how/sprint-3.jpg'
 heroAlt: 'Sprint 3 MVP'
-summary: |
-  The software we wrote.
+summary: The things we wrote.
 ---
 # Python
 
@@ -32,7 +31,7 @@ For implementation, we loaded our model into OpenCV and used the `dnn` module to
 forward pass. A single frame is processed over several steps:
 
 1. Pull image from video stream
-2. Resize image to 300x300
+2. Resize image to 300 x 300
 3. Compute forward pass on image
 4. Extract first bounding box with `Person` label
 

@@ -3,9 +3,8 @@ title: 'Ideation'
 metaDesc: 'Project Ideation'
 displayOrder: 1
 summary: |
-  To start, we had to decide what we actually wanted to do for out project. PIE offers
-  us almost total freedom when it comes to choosing a direction, and we had to sit down
-  and figure out that direction might be.
+  PIE offers us almost total freedom when it comes to choosing a project, so we started
+  off by sitting down and figuring out exactly what it was we wanted to make.
 hero: '/images/how/kinetic-rain.jpg'
 heroAlt: 'Kinetic sculpture inspiration'
 dateStart: '2021-10-25'
