@@ -4,7 +4,7 @@ metaDesc: 'PIE 2021 Kinetic Rain Project'
 layout: 'layouts/home.html'
 headerTitle: |
   Is it possible to build a Kinetic Sculpture made entirely of Trash?
-sculptureVideo: 'videos/poodle.webm'
+sculptureVideo: 'videos/demo-day.mp4'
 contentTitle: |
   ... we did.
 navLinks:
@@ -16,10 +16,10 @@ navLinks:
    text: 'How did we get there?' 
 ---
 
-We are team TEAM NAME HERE, and for [PIE 2021](http://poe.olin.edu/) we put together a
-large-scale, responsive kinetic sculpture made of recycled materials. Our goals were
-keep sustainability in mind while working on something that was visually appealing,
-responsive to the viewer, and challenging to make.
+We are team Reuse Rebuild React, and for [PIE 2021](http://poe.olin.edu/) we
+put together a large-scale, responsive kinetic sculpture made of recycled
+materials. Our goals were keep sustainability in mind while working on something
+that was visually appealing, responsive to the viewer, and challenging to make.
 
 <br/>
 

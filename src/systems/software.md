@@ -97,26 +97,13 @@ that they've left the frame and start resetting.
 
 ### Motor Calibration
 
-<div class="multi-image">
-
-  <div class="[ page-content__img-wrapper ] [ frame ]" data-frame="quinary">
-    <img src="/images/placeholder.jpg" alt="Encoder Software"/>
-  </div>
-
-  <div>
-    <p>
-    Since we want the sculpture to respond as a person walks across the frame,
-    we need to know where the motors are relative to the person. We only care
-    about X position, so this is a straightforward calculation of subtracting
-    each motor position from the person's position to obtain a difference.    </p>
-  </div>
-
-</div>
-
-To determine the location of each motor within the frame, we have an interactive
-script that allows a user to click on each motor in the webcam feed. The script
-records the X-coordinate of each motor to a file, which is then read during the
-algorithm setup.
+Since we want the sculpture to respond as a person walks across the frame, we need to
+know where the motors are relative to the person. We only care about X position, so this
+is a straightforward calculation of subtracting each motor position from the person's
+position to obtain a difference.  To determine the location of each motor within the
+frame, we have an interactive script that allows a user to click on each motor in the
+webcam feed. The script records the X-coordinate of each motor to a file, which is then
+read during the algorithm setup.
 
 
 

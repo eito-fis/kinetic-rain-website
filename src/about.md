@@ -21,8 +21,3 @@ gallery:
 
 This project was made by Annabelle, Anusha, Bahar, Eamon, and Stella for
 [PIE 2021](http://poe.olin.edu/).
-
-
-# Special Thanks
-
-TODO

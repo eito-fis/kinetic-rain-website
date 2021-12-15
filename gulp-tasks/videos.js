@@ -1,7 +1,7 @@
 const {dest, src} = require('gulp');
 
 const videos = () => {
-  return src('./src/videos/*.webm')
+  return src('./src/videos/*')
     .pipe(dest('./dist/videos'));
 };
 

@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "npx gulp && concurrently \"npx gulp watch\" \"npx eleventy --serve\"",
-    "production": "NODE_ENV=production npx gulp && NODE_ENV=production PATH_PREFIX=\/kinetic-rain-website\/ npx eleventy"
+    "production": "NODE_ENV=production npx gulp && NODE_ENV=production PATH_PREFIX=\/kinetic-rain-website\/ npx eleventy",
+    "submission": "NODE_ENV=production npx gulp && NODE_ENV=production PATH_PREFIX=/pie-2021-03/Reuse-Rebuild-React/ npx eleventy"
   },
   "keywords": [],
   "author": "",

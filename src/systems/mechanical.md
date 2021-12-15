@@ -9,7 +9,7 @@ summary: The things we built.
 
 # Overview
 
-Kinetic Jellyfish is a 7’x7’x4’ sculpture. 72 curved jellyfish (street signs and wood
+Reuse Rebuild React is a 7’x7’x4’ sculpture. 72 curved jellyfish (street signs and wood
 scrap) rise and fall fluidly within the bounding box of a wooden frame (deconstructed
 pallets) as nearly invisible strings tied to the jellyfish winding up above the viewer’s
 eyeline. The simple but elegant motion stands at odds with the origin and appearance of
@@ -191,7 +191,7 @@ pulley to allow the bolts to pass through the shaft. Piece of (pink) cake.
   </div>
 
   <div class="[ page-content__img-wrapper ] [ frame ]" data-frame="quinary">
-    <img src="/images/placeholder.jpg" alt="Motor/Mount Interfaces"/>
+    <img src="/images/what/mechanical/interface.png" alt="Motor/Mount Interfaces"/>
   </div>
 
 </div>
