@@ -2,7 +2,7 @@
 title: 'Electrical'
 metaDesc: 'Electrical systems'
 displayOrder: 2
-hero: '/images/how/sprint-1.jpg'
+hero: '/images/what/electrical/electrical.jpg'
 heroAlt: 'Sprint 1 prototype'
 summary: The things we powered.
 ---
@@ -17,7 +17,7 @@ summary: The things we powered.
 
 # Circuit diagram
 
-![placeholder](/images/what/circuit.png)
+![placeholder](/images/what/electrical/circuit.png)
 
 # Overview
 

@@ -29,7 +29,9 @@ heroAlt: 'Sprint 1 prototype'
 ## Simulation
 
 
-<img src="/images/how/sprint-1/simulation.gif" alt="Simulation GIF" />
+<div class="centered-image">
+  <img src="/images/how/sprint-1/simulation.gif" alt="Simulation GIF" />
+</div>
 
 [The simulation](https://openprocessing.org/sketch/1332951) was finished in the first
 week of the sprint.  We didn't know exactly what kind of motion we were going for, so
@@ -39,7 +41,7 @@ were happy with.
 
 ## MVP
 
-<div class="multi-image">
+<div class="centered-image">
   <video src="/videos/sprint-1.webm" preload='metadata' loop controls muted></video>
 </div>
 

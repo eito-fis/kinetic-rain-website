@@ -59,19 +59,16 @@
     --flow-space: #{get-size('500')};
   }
 
-  img,
-  video {
+  div img,
+  div video {
     max-height: 20rem;
+    max-width: 40rem;
     margin-top: get-size('500');
-    margin-left: auto;
-    margin-right: auto;
   }
 
   figure {
     position: relative;
     display: table;
-    margin-left: auto;
-    margin-right: auto;
   }
 
   figure > img{
@@ -96,28 +93,39 @@
 
   .multi-image {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: get-size('500');
+    margin-bottom: get-size('700');
+    flex-direction: column;
+
+    * + img,
+    * + figure,
+    * + div {
+      margin-top: get-size('500');
+    }
+
+    @include media-query('md') {
+      flex-direction: row;
+      * + img,
+      * + figure,
+      * + div {
+        margin-left: get-size('900');
+        margin-top: 0;
+      }
+    }
+  }
+
+  .centered-image {
+    display: flex;
     justify-content: center;
     align-items: center;
     margin-top: get-size('500');
     margin-bottom: get-size('700');
     flex-direction: column;
 
-    img {
-      max-height: 20rem;
-    }
-
-    * + img,
-    * + figure {
-      margin-top: get-size('300');
-    }
-
     @include media-query('md') {
       flex-direction: row;
-      * + img,
-      * + figure {
-        margin-left: get-size('300');
-        margin-top: 0;
-      }
     }
   }
 

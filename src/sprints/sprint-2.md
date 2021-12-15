@@ -25,7 +25,7 @@ heroAlt: 'Sprint 2 frame'
 
 # Deliverable
 
-<div class="multi-image">
+<div class="centered-image">
   <video src="/videos/sprint-2.webm" preload='metadata' loop controls muted></video>
 </div>
 

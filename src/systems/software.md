@@ -2,10 +2,36 @@
 title: 'Software'
 metaDesc: 'Software systems'
 displayOrder: 3
-hero: '/images/how/sprint-3.jpg'
+hero: '/images/what/software/software.jpg'
 heroAlt: 'Sprint 3 MVP'
 summary: The things we wrote.
 ---
+
+# Overview
+
+Our code is split into our software written in Python and our firmware written
+in C.  In addition, we have a simulation for the sculpture dynamics written with
+[p5.js](https://p5js.org/).
+
+Our project code can be found [here](https://github.com/19platta/kinetic-rain).
+
+Our website code can be found [here](https://github.com/eito-fis/kinetic-rain-website).
+
+## Contents
+
+- [*Python*](/what/software/#python)
+  - [*Person Detection*](/what/software/#person-detection)
+    - [*Algorithm Selection*](/what/software/#algorithm-selection)
+    - [*Implementation*](/what/software/#implementation)
+  - [*Control*](/what/software/#control)
+    - [*Motor Calibration*](/what/software/#motor-calibration)
+    - [*Motor Speed*](/what/software/#motor-speed)
+  - [*Dependencies*](/what/software/#dependencies%3A)
+- [*C*](/what/software/#c)
+  - [*Serial*](/what/software/#serial)
+  - [*Control*](/what/software/#control-1)
+- [*Processing*](/what/software/#processing)
+
 # Python
 
 Our Python code handles all of our high level control, reading the input from the webcam
@@ -27,13 +53,27 @@ cpu.
 
 ### Implementation
 
-For implementation, we loaded our model into OpenCV and used the `dnn` module to run our
-forward pass. A single frame is processed over several steps:
+<div class="multi-image">
 
-1. Pull image from video stream
-2. Resize image to 300 x 300
-3. Compute forward pass on image
-4. Extract first bounding box with `Person` label
+  <div>
+    <p>
+    For implementation, we loaded our model into OpenCV and used the `dnn`
+    module to run our forward pass. A single frame is processed over several
+    steps:
+    </p>
+    <ol>
+    <li>Pull image from video stream</li>
+    <li>Resize image to 300 x 300</li>
+    <li>Compute forward pass on image</li>
+    <li>Extract first bounding box with `Person` label</li>
+    </ol>
+  </div>
+
+  <div class="[ page-content__img-wrapper ] [ frame ]" data-frame="quinary">
+    <img src="/images/what/software/box.jpg" alt="Bounding Box"/>
+  </div>
+
+</div>
 
 As we only care about the X position of the person as they walk across the frame, we
 reduce the bounding box into an average X value that we use to calculate motor speeds.
@@ -55,6 +95,33 @@ that they've left the frame and start resetting.
 
 ## Control
 
+### Motor Calibration
+
+<div class="multi-image">
+
+  <div class="[ page-content__img-wrapper ] [ frame ]" data-frame="quinary">
+    <img src="/images/placeholder.jpg" alt="Encoder Software"/>
+  </div>
+
+  <div>
+    <p>
+    Since we want the sculpture to respond as a person walks across the frame,
+    we need to know where the motors are relative to the person. We only care
+    about X position, so this is a straightforward calculation of subtracting
+    each motor position from the person's position to obtain a difference.    </p>
+  </div>
+
+</div>
+
+To determine the location of each motor within the frame, we have an interactive
+script that allows a user to click on each motor in the webcam feed. The script
+records the X-coordinate of each motor to a file, which is then read during the
+algorithm setup.
+
+
+
+### Motor Speed
+
 Given the X position of the person within the frame by our CV model, we can calculate
 the appropriate speeds for the motors. It is important to note here that we are setting
 *speeds,* not *positions*, when controlling the motors. Generally, the closer a person
@@ -66,7 +133,7 @@ function](https://www.desmos.com/calculator/qoponohd29) which becomes more negat
 further you move from 0. This function then takes in the normalized distance between the
 person and the motor we are calculating the speed for. If the person is close, the motor
 is driven up, and if they are far, the motor is driven down. The output of the function,
-bounded between 1 and -1, is then scaled to an appropriate motor speed, bundles into a
+bounded between 1 and -1, is then scaled to an appropriate motor speed, bundled into a
 list with every other motor speed, and sent to the Arduino.
 
 ## Dependencies:
@@ -100,21 +167,37 @@ token
 
 ## Control
 
-Control for the motor is kept relatively simple by the fact that all we have to do is
-set motor speed and direction. However, there are some complexities in controlling many
-motors that have varying states and in using our DIY encoders. To handle the many motors,
-we define a simple `struct` that maintains all state for a single motor, like speed,
-direction, last direction, etc. Each motor is then processed in isolation using only the
-new speed designated by the serial message and the previous state of the motor.
+<div class="multi-image">
 
-Handing the DIY encoders is more complicated. In essence, they are just limit switches
-that are hit every 90 degrees of rotation. So, the baseline handling is simple - if the
-switch associated with a motor reads high, increment or decrement the position by 90
-based on the direction the motor was running. However, there are a few edge cases we
-also have to handle:
+  <div>
+    <p>
+    Control for the motor is kept relatively simple by the fact that all we have
+    to do is set motor speed and direction. However, there are some complexities
+    in controlling many motors that have varying states and in using our DIY
+    encoders. To handle the many motors, we define a simple `struct` that
+    maintains all state for a single motor, like speed, direction, last
+    direction, etc. Each motor is then processed in isolation using only the new
+    speed designated by the serial message and the previous state of the motor.
+    </p>
+    <br/>
+    <p>
+    Handing the DIY encoders is more complicated. In essence, they are just
+    limit switches that are hit every 90 degrees of rotation. So, the baseline
+    handling is simple - if the switch associated with a motor reads high,
+    increment or decrement the position by 90 based on the direction the motor
+    was running. However, there are a few edge cases we also have to handle:
+    </p>
+    <ul>
+    <li>The case where we switch direction while a switch is pressed</li>
+    <li>The case where momentum carries us over a switch</li>
+    </ul>
+  </div>
 
-- The case where we switch direction while a switch is pressed
-- The case where momentum carries us over a switch
+  <div class="[ page-content__img-wrapper ] [ frame ]" data-frame="quinary">
+    <img src="/images/what/software/encoder.gif" alt="Encoder Software"/>
+  </div>
+
+</div>
 
 In the first scenario, our naive code breaks because we read the switch as being
 pressed, but we never hit it a second time coming back resulting in us missing 90
@@ -140,8 +223,12 @@ entire system is made up by a number of axles, each of which holds a number of v
 Each voxel has a simulated pulley radius, allowing us to calculate the height of the
 voxel given the angular position of the axle it is attached to. Separate from the
 sculpture, a simulated human walks across the scene. Then, rotational speeds are passed to
-each axel following the procedure outline in the **Python** section above, allowing us
-to simulate the interaction with the sculpture.
+each axel following the procedure outline in the [Python](/what/software/#python)
+section, allowing us to simulate the interaction with the sculpture.
+
+<div class="centered-image">
+  <img src="/images/how/sprint-1/simulation.gif" alt="Simulation GIF" />
+</div>
 
 The sculpture is also produced to scale for ease of use when creating our final design.
 This is specifically useful for the pulley radii. They are unchangable once cut for the

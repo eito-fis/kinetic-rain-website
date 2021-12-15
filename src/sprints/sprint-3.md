@@ -28,7 +28,7 @@ heroAlt: 'Sprint 3 MVP'
 
 # Deliverable
 
-<div class="multi-image">
+<div class="centered-image">
   <video src="/videos/sprint-3.webm" preload='metadata' loop controls muted></video>
 </div>
 
