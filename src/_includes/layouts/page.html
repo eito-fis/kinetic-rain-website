@@ -13,4 +13,15 @@
   {{ content | linkFilter | safe }}
 </div>
 
+
+{% if category == "systems" %}
+{% set collection = collections.systems %}
+{% else %}
+{% set collection = collections.sprints %}
+{% endif %}
+
+{% set paginationPrev = collection | getPreviousCollectionItem(page) %}
+{% set paginationNext = collection | getNextCollectionItem(page) %}
+{% include 'partials/pagination.html' %}
+
 {% endblock %}

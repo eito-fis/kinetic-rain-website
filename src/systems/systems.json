@@ -1,4 +1,5 @@
 {
   "layout": "layouts/page.html",
-  "permalink": "/what/{{ title | slug }}/index.html"
+  "permalink": "/what/{{ title | slug }}/index.html",
+  "category": "systems"
 }

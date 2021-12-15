@@ -16,7 +16,7 @@
         {% for item in obj.images %}
         <li>
           <img
-            src="{{ item.src }}"
+            src="{{ item.src | url }}"
             alt="{{ item.alt }}"
             draggable="false"
             class="radius"
@@ -27,7 +27,7 @@
       {% else %}
       <div class="scroll-gallery__media">
         <img
-          src="{{ obj.images[0].src }}"
+          src="{{ obj.images[0].src | url }}"
           alt="{{ obj.images[0].alt }}"
           draggable="false"
           class="radius"
@@ -35,7 +35,7 @@
       </div>
       {% endif %}
     </div>
-    <h3>{{ obj.title }}</h3>
+    <h3 class="font-base">{{ obj.title }}</h3>
     {% endfor %}
   </div>
 </article>

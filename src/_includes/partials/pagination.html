@@ -1,0 +1,18 @@
+{% if paginationNext or paginationPrev %}
+  <footer class="[ pagination ] [ panel ] [ font-sans weight-bold ]">
+    <div class="wrapper">
+      <nav class="pagination__inner" aria-label="Pagination links">
+        {% if paginationPrev %}
+          <a href="{{ paginationPrev.url }}" data-direction="backwards">
+            <span>{{ paginationPrev.data.title }}</span>
+          </a>
+        {% endif %}
+        {% if paginationNext %}
+          <a href="{{ paginationNext.url }}" data-direction="forwards">
+            <span>{{ paginationNext.data.title }}</span>
+          </a>
+        {% endif %}
+      </nav>
+    </div>
+  </footer>
+{% endif %}
