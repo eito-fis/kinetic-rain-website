@@ -25,6 +25,10 @@ heroAlt: 'Sprint 2 frame'
 
 # Deliverable
 
+<div class="multi-image">
+  <video src="/videos/sprint-2.webm" preload='metadata' loop controls muted></video>
+</div>
+
 At the end of Sprint 2, we had the start to our final piece, but it was clear some
 components weren't going to work. Our frame was made of a mix of PVC and wood, and our 3
 shafts were made with two interconnected shafts of metal we had scavenged.

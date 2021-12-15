@@ -59,7 +59,8 @@
     --flow-space: #{get-size('500')};
   }
 
-  img {
+  img,
+  video {
     max-height: 20rem;
     margin-top: get-size('500');
     margin-left: auto;
@@ -98,6 +99,7 @@
     justify-content: center;
     align-items: center;
     margin-top: get-size('500');
+    margin-bottom: get-size('700');
     flex-direction: column;
 
     img {

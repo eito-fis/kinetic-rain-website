@@ -28,7 +28,8 @@ heroAlt: 'Sprint 1 prototype'
 
 ## Simulation
 
-![placeholder](/images/placeholder.jpg)
+
+<img src="/images/how/sprint-1/simulation.gif" alt="Simulation GIF" />
 
 [The simulation](https://openprocessing.org/sketch/1332951) was finished in the first
 week of the sprint.  We didn't know exactly what kind of motion we were going for, so
@@ -38,10 +39,9 @@ were happy with.
 
 ## MVP
 
-<p class="multi-image">
-  <img src="/images/placeholder.jpg" alt="placeholder"/>
-  <img src="/images/placeholder.jpg" alt="placeholder"/>
-</p>
+<div class="multi-image">
+  <video src="/videos/sprint-1.webm" preload='metadata' loop controls muted></video>
+</div>
 
 Our integration test was also successful. The visit to the recycling center yielded a
 ton of usable materials, including a golf shaft, several street signs, a baby gate and

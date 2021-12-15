@@ -5,5 +5,9 @@ module.exports = value => {
     /\/images/g,
     pathPrefix + 'images',
   );
+  newValue = newValue.replace(
+    /\/videos/g,
+    pathPrefix + 'videos',
+  );
   return newValue;
 };

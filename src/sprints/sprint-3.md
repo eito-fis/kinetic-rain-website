@@ -17,7 +17,7 @@ heroAlt: 'Sprint 3 MVP'
 - Complete DIY motor encoders
 - Complete construction of one full shaft
 - Mount shaft to frame
-- Mounted webcam
+- Mount webcam
 
 ## Software Goals
 
@@ -28,12 +28,16 @@ heroAlt: 'Sprint 3 MVP'
 
 # Deliverable
 
+<div class="multi-image">
+  <video src="/videos/sprint-3.webm" preload='metadata' loop controls muted></video>
+</div>
+
 By the end of Sprint 3, we had overcome the issues identified in the previous sprint and
-had a strong start for our final structure. The frame was converted to be made entirely
-of wood, the shaft was welded then mounted, and weights made of street sign were
-attached to the pulleys. Our software was also integration tested and ready to go, with
-a full pipeline from the mounted webcam to the Python software to our Arduino. An
-important software feature for this sprint was support the DIY encoders we designed -
-this allowed us to run the sculpture with minimal safety concerns. We ended the sprint
-with our first test of our what we hoped would be our final configuration. Now, we just
-had to scale up and finish manufacturing.
+had a strong start for our final structure. The frame was converted to be entirely made
+of wood, the shaft was welded and mounted, and weights made of street sign were attached
+to the pulleys. Our software was also integration tested and ready to go, with a full
+pipeline from the mounted webcam to the Python software to our Arduino. An important
+software feature for this sprint was support for the  DIY encoders we designed - this
+allowed us to run the sculpture with minimal safety concerns. We ended the sprint with a
+successful test. It was clear that our concept was going to work in this form factor.
+Now, we just needed to finish manufacturing.
