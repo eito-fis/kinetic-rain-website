@@ -1,3 +1,6 @@
+const markdownIt = require("markdown-it");
+const markdownItAnchor = require("markdown-it-anchor");
+
 // Filters
 const dateFilter = require('./src/filters/date-filter.js');
 const w3DateFilter = require('./src/filters/w3-date-filter.js');
@@ -12,6 +15,10 @@ module.exports = config => {
   if (isProduction) {
     config.addTransform('htmlmin', htmlMinTransform);
   }
+
+  // create a new markdown-it instance with the plugin
+  const markdownLib = markdownIt({ html: true }).use(markdownItAnchor);
+  config.setLibrary("md", markdownLib);
 
 
   config.addFilter('dateFilter', dateFilter);

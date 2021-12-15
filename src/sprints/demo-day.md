@@ -5,7 +5,7 @@ displayOrder: 5
 summary: |
   Now that our manufacturing process, design and software were all finalized, the only
   thing left was to finish building the entire thing.
-hero: '/images/how/demo-day.jpg'
+hero: '/images/how/demo-day/demo-day.jpg'
 heroAlt: 'Demo day sculpture'
 ---
 # Goals

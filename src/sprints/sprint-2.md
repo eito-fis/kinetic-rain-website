@@ -5,7 +5,7 @@ displayOrder: 3
 summary: |
   Having demonstrated the basic concepts, our next step was to scale up and find out what
   kind of problems we would have to solve for the final piece.
-hero: '/images/how/sprint-2.jpg'
+hero: '/images/how/sprint-2/sprint-2.jpg'
 heroAlt: 'Sprint 2 frame'
 ---
 # Goals

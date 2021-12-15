@@ -5,7 +5,7 @@ displayOrder: 2
 summary: |
   With our initial idea in place, we set out to throw together a MVP that used the
   materials we found and demonstrated the mechanism we wanted.
-hero: '/images/how/sprint-1.jpg'
+hero: '/images/how/sprint-1/sprint-1.jpg'
 heroAlt: 'Sprint 1 prototype'
 ---
 # Goals

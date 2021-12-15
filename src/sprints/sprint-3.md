@@ -5,7 +5,7 @@ displayOrder: 4
 summary: |
   With all significant roadblocks identified, we settled in to iron out issue with our
   manufacturing and began finalizing our design.
-hero: '/images/how/sprint-3.jpg'
+hero: '/images/how/sprint-3/sprint-3.jpg'
 heroAlt: 'Sprint 3 MVP'
 ---
 
