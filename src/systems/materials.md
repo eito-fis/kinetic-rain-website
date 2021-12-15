@@ -19,7 +19,9 @@ Bearing | 1.20 | 10 | 12.00
 Fasteners | 10.00 | 1 | 10.00
 Limit Switch | 0.70 | 10 | 7.00
 Fishing Line | 2.50 | 1 | 2.50
-Total Sum |  |  | 207.50
+33 Foot USB A Extender | 20.00 | 1 | 20.00
+15 Foot USB A to B Cable | 6.00 | 1 | 6.00
+Total Sum |  |  | 233.50
 
 # Donated Materials
 
@@ -41,4 +43,4 @@ Be Prepared to Stop Sign | 1
 Stop Sign | 1
 Total Sum |  0!
 
-# Final Sum: 280.50
+# Final Sum: 306.50

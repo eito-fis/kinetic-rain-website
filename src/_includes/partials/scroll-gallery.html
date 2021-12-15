@@ -1,0 +1,41 @@
+<article class="[ scroll-gallery ] [ dot-shadow panel ] [ bg-dark-shade color-light ]">
+  <div class="[ wrapper ] [ flow flow-space-300 ]">
+    <h2
+      class="[ scroll-gallery__heading ] [ headline ] [ md:measure-micro ]"
+      data-highlight="secondary"
+    >
+      {{ scrollGalleryTitle }}
+    </h2>
+    <p class="visually-hidden" id="scroll-gallery-desc">
+       A collection of photos taken over the course of our project
+    </p>
+    {% for obj in scrollGalleryImages %}
+    <div class="[ scroll-gallery__items ] [ flow-space-700 ]">
+      {% if obj.images | length > 1 %}
+      <ul class="scroll-gallery__list">
+        {% for item in obj.images %}
+        <li>
+          <img
+            src="{{ item.src }}"
+            alt="{{ item.alt }}"
+            draggable="false"
+            class="radius"
+          />
+        </li>
+        {% endfor %}
+      </ul>
+      {% else %}
+      <div class="scroll-gallery__media">
+        <img
+          src="{{ obj.images[0].src }}"
+          alt="{{ obj.images[0].alt }}"
+          draggable="false"
+          class="radius"
+        />
+      </div>
+      {% endif %}
+    </div>
+    <h3>{{ obj.title }}</h3>
+    {% endfor %}
+  </div>
+</article>

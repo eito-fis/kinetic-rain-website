@@ -1,10 +1,19 @@
 {% extends "layouts/base.html" %}
-<!-- {% set pageCriticalStyles = ['css/home.css'] %} -->
+{% set pageCriticalStyles = ['css/about.css'] %}
 
 {% block content %}
 
 {% set pageHeaderTitle = headerTitle %}
-{% set pageHeaderSummary = content | safe %}
+{% set pageHeaderSummary %}
+  <div class="[ page-content ] [ flow wrapper ] [ flow-space-500 ]">
+    {{ content | linkFilter | safe }}
+  </div>
+{% endset %}
+{% set pageHeaderCondence = true %}
 {% include "partials/page-header.html" %}
+
+{% set scrollGalleryTitle = galleryTitle %}
+{% set scrollGalleryImages = gallery %}
+{% include "partials/scroll-gallery.html" %}
 
 {% endblock %}

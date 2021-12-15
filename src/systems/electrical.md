@@ -17,7 +17,7 @@ summary: The things we powered.
 
 # Circuit diagram
 
-![placeholder](/images/what/electrical/circuit.png)
+![Circuit Diagram](/images/what/electrical/circuit.png)
 
 # Overview
 
