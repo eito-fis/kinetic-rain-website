@@ -4,12 +4,14 @@ const markdownItAnchor = require("markdown-it-anchor");
 // Filters
 const dateFilter = require('./src/filters/date-filter.js');
 const w3DateFilter = require('./src/filters/w3-date-filter.js');
+const fixLinksFilter = require('./src/filters/fix-links.js');
 
 // Transforms
 const htmlMinTransform = require('./src/transforms/html-min-transform.js');
 
 // Create a helpful production flag
 const isProduction = process.env.NODE_ENV === 'production';
+const pathPrefix = process.env.PATH_PREFIX || '/';
 
 module.exports = config => {
   if (isProduction) {
@@ -23,6 +25,7 @@ module.exports = config => {
 
   config.addFilter('dateFilter', dateFilter);
   config.addFilter('w3DateFilter', w3DateFilter);
+  config.addFilter('linkFilter', fixLinksFilter);
 
   config.addCollection('sprints', collection => {
     return collection.getFilteredByGlob('./src/sprints/*.md').sort((a, b) => {
@@ -42,6 +45,7 @@ module.exports = config => {
     markdownTemplateEngine: 'njk',
     dataTemplateEngine: 'njk',
     htmlTemplateEngine: 'njk',
+    pathPrefix: pathPrefix,
     dir: {
       input: 'src',
       output: 'dist'

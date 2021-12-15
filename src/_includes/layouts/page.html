@@ -10,7 +10,7 @@
 {% include 'partials/hero-header.html' %}
 
 <div class="[ page-content panel ] [ flow wrapper ] [ flow-space-500 ]">
-  {{ content | safe }}
+  {{ content | linkFilter | safe }}
 </div>
 
 {% endblock %}

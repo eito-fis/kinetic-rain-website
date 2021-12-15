@@ -3,7 +3,7 @@ title: 'Sprint 3'
 metaDesc: 'Sprint 3 description'
 displayOrder: 4
 summary: |
-  With all significant roadblocks identified, we settled in to iron out issue with our
+  With all significant roadblocks identified, we settled in to iron out issues with our
   manufacturing and began finalizing our design.
 hero: '/images/how/sprint-3/sprint-3.jpg'
 heroAlt: 'Sprint 3 MVP'

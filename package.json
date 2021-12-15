@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "npx gulp && concurrently \"npx gulp watch\" \"npx eleventy --serve\"",
-    "production": "NODE_ENV=production npx gulp && NODE_ENV=production npx eleventy --pathprefix 'kinetic-rain-website'"
+    "production": "NODE_ENV=production npx gulp && NODE_ENV=production PATH_PREFIX=\/kinetic-rain-website\/ npx eleventy"
   },
   "keywords": [],
   "author": "",
